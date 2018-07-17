@@ -1,0 +1,11 @@
+version: 0.0
+os: windows
+files:
+  - source: /Content
+    destination: C:\inetpub\wwwroot
+hooks:
+  BeforeInstall:
+    - location: ./PreInstall.ps1
+  AfterInstall:
+    - location: ./PostInstall.ps1
+
